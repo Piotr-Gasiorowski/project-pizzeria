@@ -71,9 +71,10 @@ class Product{
 
       /* find active product (product that has active class) */
       let activeProduct = thisProduct.element.querySelector('.active');
+      activeProduct = document.querySelector(select.all.menuProductsActive); /*const
 
       /* if there is active product and it's not thisProduct.element, remove class active from it */
-      if (activeProduct !== null && activeProduct !== thisProduct.element) {
+      if ((activeProduct != null) && (activeProduct != thisProduct.element)) {
         activeProduct.classList.remove(classNames.menuProduct.wrapperActive);
       }
 
