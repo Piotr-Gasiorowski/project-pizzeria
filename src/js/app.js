@@ -129,5 +129,3 @@ const app = {
 };
 
 app.init();
-
-
